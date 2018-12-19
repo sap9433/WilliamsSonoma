@@ -17,9 +17,9 @@
                 <div class="mui-container-fluid">
                         <div class="mui-row">
                             <div class="mui-col-xs-12 mui-col-md-3 mui-col-md-offset-4 products" ng-repeat = "product in products">
-                                    <img src={{product.hero.href}} />
                                     <div class="name">{{product.name.replace("#8482;", "")}}</div>
                                     <div class="price">${{product.priceRange.selling.low}} - ${{product.priceRange.selling.high}}</div>
+                                    <img src={{product.hero.href}} />
                             </div>
                         </div>
                 </div>

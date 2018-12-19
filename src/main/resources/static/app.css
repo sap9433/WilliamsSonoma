@@ -34,15 +34,16 @@
     width: 90%;
 }
 .name{
-    position: absolute;
+    position: relative;
     margin-top: -0.8%;
     color: gray;
 }
 .price{
-    color: #e21b1b;
+    color: #484865;
     position: absolute;
-    margin-top: -3.2%;
-    margin-left: 1.1%;
+    font-weight: 600;
+    margin-left: 1%;
+    margin-top: 1%;
     font-size: 18px;
     background: #27252524;
 }
