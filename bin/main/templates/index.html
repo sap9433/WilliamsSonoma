@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="//cdn.muicss.com/mui-0.9.41/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.9.41/js/mui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script type="text/javascript" th:src="@{/app.js}"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{app.css}"/>
+    <title>Williams-Sonoma</title>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <div class="container">
+                <div class="mui-container-fluid">
+                        <div class="mui-row">
+                            <div class="mui-col-xs-12 mui-col-md-3 mui-col-md-offset-4 products" ng-repeat = "product in products">
+                                    <img src={{product.hero.href}} />
+                                    <div class="name">{{product.name.replace("#8482;", "")}}</div>
+                                    <div class="price">${{product.priceRange.selling.low}} - ${{product.priceRange.selling.high}}</div>
+                            </div>
+                        </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
